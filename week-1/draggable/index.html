@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyboard Only</title>
+  <link rel="stylesheet" href="../global.css">
+</head>
+<body>
+  <header>
+    <h1>Drag & Drop Task Board</h1>
+  </header>
+  <main>
+    <section ondrop="drop(event)" ondragover="allowDrop(event)">
+      <h2>To Do</h2>
+      <ol>
+        <li draggable="true" ondragstart="drag(event)" id="1">
+          <p>Task 1</p>
+        </li>
+        <li draggable="true" ondragstart="drag(event)" id="2">
+          <p>Task 2</p>
+        </li>
+        <li draggable="true" ondragstart="drag(event)" id="3">
+          <p>Task 3</p>
+        </li>
+      </ol>
+    </section>
+    <section ondrop="drop(event)" ondragover="allowDrop(event)">
+      <h2>In Progress</h2>
+      <ol>
+        <li draggable="true" ondragstart="drag(event)" id="4">
+          <p>Task 4</p>
+        </li>
+        <li draggable="true" ondragstart="drag(event)" id="5">
+          <p>Task 5</p>
+        </li>
+      </ol>
+    </section>
+    <section ondrop="drop(event)" ondragover="allowDrop(event)">
+      <h2>Done</h2>
+      <ol>
+        <li draggable="true" ondragstart="drag(event)" id="6">
+          <p>Task 6</p>
+        </li>
+      </ol>
+    </section>
+  
+  
+  </main>
+  
+  <script src="index.js"></script>  
+</body>
+</html>
