@@ -41,6 +41,10 @@ main, header {
   gap: 1rem;
 }
 
+main {
+  padding-bottom: 1rem;
+}
+
 header {
   flex-direction: column;
   margin: 2rem auto;
