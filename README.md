@@ -16,7 +16,7 @@ Deze 4 tests hebben alle 4 een andere manier om te interacteren met een Trello-a
 Doordat de case beschreef dat Marijn vooral met het toetsenbord navigeert gingen we er van uit dat het Keyboard Only concept het beste zou werken. Daarnaast verwachtte we dat de Click & Drop beter zou werken voor Marijn dan Drag & Drop.
 
 ### Resultaten
-**Test Resultaten**
+**Test Resultaten**  
 1. Drag & Drop
   - Ging verrassend soepel. Maakt gebruik van de trackpad met 1 hand.
   - Het kaartje verder slepen over het scherm is soms lastig.
@@ -34,7 +34,7 @@ Doordat de case beschreef dat Marijn vooral met het toetsenbord navigeert gingen
   - Om de kaart meerdere rijen te verplaatsen is een hoop klik- en muiswerk nodig.
   - Tabben is nog steeds geen geweldige interactie voor Marijn.
 
-**Marijns Persoonlijkheid & Beperking**
+**Marijns Persoonlijkheid & Beperking**  
 We hebben Marijn ook een aantal persoonlijke vragen gesteld om erachter te komen wat zijn persoonlijkheid is en hoe hij met zijn computer/laptop omgaat. Marijn heeft een gezin met twee kinderen (beide jongens) en werkt als technische chief architect. Hij zorgt ervoor dat onderandere de metadata van muziek klopt. Hij luistert voornamelijk naar "takkeherrie" (lees: metal) en heeft geen favoriete kleur; hij gebruikt wel altijd dark mode. 
 
 Hij bestuurt zijn computer met 3 beeldschermen voornamelijk doormiddel van een trackpad. Dit trackpad gebruikt hij met 1 hand (voornamelijk zijn duim) dit is makkelijker voor hem dan gebruik maken van een keyboard omdat het gebruik van een trackpad minder fijne motoriek vereist. Het valt op dat zijn hele lichaam veel beweegt tijdens het gebruik van zijn computer. Toetsen die ver weg zitten van het trackpad of ver uit elkaar zitten zijn lastig voor Marijn om snel te bereiken; hij bereikt ze echter wel altijd!
