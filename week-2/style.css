@@ -1,8 +1,8 @@
 * {
-  font-size: calc(65% + 0.8vmin);
   --font-text: 'Open Sans', sans-serif;
   --font-headers: 'Fondamento', cursive;
   -webkit-text-size-adjust: 100%;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
   font-family: var(--font-text);
@@ -16,6 +16,7 @@
 
 html {
   height: 100%;
+  font-size: calc(65% + 0.8vmin);
   background-image: url(https://media.macphun.com/img/uploads/customer/blog/1541154551/15411555025bdc2aae54d493.92923804.jpg?q=85&w=1680)
 }
 
@@ -89,15 +90,15 @@ section > button {
   border: none;
   border-radius: var(--round-corners);
   opacity: 0.9;
-  cursor: pointer;
   font-size: 1rem;
   margin-top: auto;
   color: white;
 }
 
-section > button:is(:hover, :focus) {
+section > button:is(:hover, :focus):not(:is(:disabled)) {
   opacity: 1;
   background-color: hsla(0, 63%, 43%, 0.9);
+  cursor: pointer;
 }
 
 li {
@@ -132,4 +133,13 @@ li {
   transform: none;
   pointer-events: all;
   z-index: 1;
+}
+
+#delete-button {
+  display: none;
+  padding: 2rem;
+  font-size: 1rem;
+  background-color: white;
+  border: none;
+  border-radius: var(--round-corners);
 }

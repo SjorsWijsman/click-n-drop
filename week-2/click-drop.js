@@ -44,26 +44,43 @@ let newSongs = {
 
 let selected;
 
+
 // Add move event to move selected item with mouse
 document.addEventListener('mousemove', (e) => {
   if (selected) {
-    selected.style.left = e.clientX + 'px'
-    selected.style.top = e.clientY + 'px'
+    selected.style.left = e.pageX + 'px'
+    selected.style.top = e.pageY + 'px'
   }
 }) 
 
+
 // Adds event listeners to lists for Click & Drop Functionality
-for (list of lists) {
+for (const list of lists) {
   list.addEventListener('click', (e) => {
     if (selected) {
-      for (node of e.path) {
+      for (const node of e.path) {
         if (node.nodeName === 'SECTION') {
+          const ol = node.querySelector('ol')
+          
+          // Check if item needs to be placed above other items
+          let placed = false
+          for (const li of ol.children) {
+            rect = li.getBoundingClientRect()
+            itemHeight = rect.top + li.offsetHeight
+            if (e.clientY < itemHeight) {
+              ol.insertBefore(selected, li)
+              placed = true
+              break
+            }
+          }
+
+          // Else, append item at the end of the list
+          if (!placed) ol.appendChild(selected)
+
           selected.classList.remove('selected')
           selected.style.left = ''
           selected.style.top = ''
           
-          node.querySelector('ol').appendChild(selected)
-
           fireMode()
 
           selected = null
@@ -85,6 +102,7 @@ for (list of lists) {
   })
 }
 
+
 // Toggles FIREMODE
 function fireMode() {
   if (checkIfCorrect()) {
@@ -94,16 +112,17 @@ function fireMode() {
   }
 }
 
+
 // Checks if Song + Artist combinations are correct
 function checkIfCorrect() {
   return [...document.querySelectorAll('section')].every(list => {
     const artist = list.querySelector('h2').textContent
     return [...list.querySelector('ol').querySelectorAll('li')].every(item => {
-      console.log({...songs, ...newSongs})
       return {...songs, ...newSongs}[item.querySelector('p').textContent].artist === artist
     })
   })
 }
+
 
 // Adds a card to the list
 function addCard(event) {
@@ -113,13 +132,31 @@ function addCard(event) {
     const listItem = document.createElement('LI')
     const text = document.createElement('P')
     text.textContent = getRandomSong()
-  
+
     listItem.appendChild(text)
     section.querySelector('ol').appendChild(listItem)
-  
+
+    replaceButtonText()
     fireMode()
   }
 }
+
+
+function replaceButtonText() {
+  for (const button of document.querySelectorAll('button')) {
+    if (button.textContent === 'Cards are sold out :(' || button.textContent === 'Add Card') {
+      if (!selected && Object.keys(newSongs).length > 0) {
+        button.textContent = 'Add Card'
+        button.disabled = false
+      } else {
+        button.textContent = 'Cards are sold out :('
+        button.disabled = true
+      }
+    }
+  }
+  
+}
+
 
 // Gets random song from newSongs and moves this item to songs object
 function getRandomSong() {
@@ -128,4 +165,31 @@ function getRandomSong() {
   songs[randomSong] = newSongs[randomSong]
   delete newSongs[randomSong]
   return randomSong
+}
+
+
+document.addEventListener('click', () => displayDeleteButton())
+function displayDeleteButton() {
+  const button = document.querySelector('#delete-button')
+  if (selected) {
+    button.style.display = 'block'
+  } else {
+    button.style.display = 'none'
+  }
+}
+
+
+function deleteCard() {
+  if (selected) {
+    const title = selected.querySelector('p').textContent
+
+    newSongs[title] = songs[title]
+    delete songs[title]
+
+    selected.remove()
+    selected = null
+
+    replaceButtonText()
+    fireMode()
+  }
 }
