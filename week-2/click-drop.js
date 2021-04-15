@@ -110,6 +110,26 @@ function fireMode() {
   } else {
     document.querySelector('html').classList.remove('fire')
   }
+  fireCounter()
+}
+
+
+fireCounter()
+function fireCounter() {
+  let count = 0;
+  let total = 0;
+  [...document.querySelectorAll('section')].forEach(list => {
+    const artist = list.querySelector('h2').textContent
+    const items = [...list.querySelector('ol').querySelectorAll('li')]
+    items.forEach(item => {
+      total += 1
+      if ({...songs, ...newSongs}[item.querySelector('p').textContent].artist === artist) {
+        count += 1
+      }
+    })
+  })
+  if (total < 4) total = 4
+  document.querySelector('footer').textContent = `Fire Mode: ${count}/${total}`
 }
 
 
@@ -145,6 +165,7 @@ function addCard(event) {
 }
 
 
+// Replace button text with feedback
 function replaceButtonText() {
   for (const button of document.querySelectorAll('button')) {
     if (button.textContent === 'Cards are sold out :(' || button.textContent === 'Add Card') {
@@ -157,7 +178,6 @@ function replaceButtonText() {
       }
     }
   }
-  
 }
 
 
@@ -171,6 +191,7 @@ function getRandomSong() {
 }
 
 
+// Display delete button when something is selected
 document.addEventListener('click', () => displayDeleteButton())
 function displayDeleteButton() {
   const button = document.querySelector('#delete-button')
@@ -182,6 +203,7 @@ function displayDeleteButton() {
 }
 
 
+/// Delete currently selected card
 function deleteCard() {
   if (selected) {
     const title = selected.querySelector('p').textContent
@@ -196,3 +218,5 @@ function deleteCard() {
     fireMode()
   }
 }
+
+
