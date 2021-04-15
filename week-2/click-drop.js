@@ -115,12 +115,15 @@ function fireMode() {
 
 // Checks if Song + Artist combinations are correct
 function checkIfCorrect() {
-  return [...document.querySelectorAll('section')].every(list => {
-    const artist = list.querySelector('h2').textContent
-    return [...list.querySelector('ol').querySelectorAll('li')].every(item => {
-      return {...songs, ...newSongs}[item.querySelector('p').textContent].artist === artist
+  if ([...document.querySelectorAll('li')].length >= 4) {
+    return [...document.querySelectorAll('section')].every(list => {
+      const artist = list.querySelector('h2').textContent
+      return [...list.querySelector('ol').querySelectorAll('li')].every(item => {
+        return {...songs, ...newSongs}[item.querySelector('p').textContent].artist === artist
+      })
     })
-  })
+  }
+  return null
 }
 
 
