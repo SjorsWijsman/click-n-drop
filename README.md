@@ -49,7 +49,7 @@ Hij bestuurt zijn computer met 3 beeldschermen voornamelijk doormiddel van een t
 ### Voorbereide Test
 
 ### Doel voor volgende week
-- [ ] Betere selected state
+- [x] Betere selected state
 - [x] 'Ghost' waar het kaartje komt te staan
 - [x] Kaartjes laten branden in het vuur
 - [ ] Interactie met Keyboard

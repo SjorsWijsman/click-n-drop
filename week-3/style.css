@@ -114,7 +114,6 @@ li {
   background-color:white;
   list-style-type: none;
   border-left: 0.4rem solid black;
-  overflow: hidden;
   position: relative;
   transform: none;
   pointer-events: all;
@@ -149,10 +148,12 @@ li > p, div > p {
 
 li.selected {
   position: absolute;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1.05);
   pointer-events: none;
   z-index: 100;
   border-left: 0.4rem solid hsla(49, 71%, 53%, 0.9);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  overflow: hidden;
 }
 
 div.ghost {
