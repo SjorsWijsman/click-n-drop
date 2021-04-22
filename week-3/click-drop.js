@@ -277,15 +277,21 @@ function placeGhost(e) {
 
 // Create explosion gif element
 function playExplosion(e) {
+  deleteExplosions()
+
   const gif = document.createElement('IMG')
   gif.src = 'explosion.gif'
   gif.classList.add('explosion')
-  document.documentElement.appendChild(gif)
+  document.body.appendChild(gif)
 
   gif.style.left = e.pageX + 'px'
   gif.style.top = e.pageY + 'px'
 
   setTimeout(() => { 
-    document.querySelectorAll('.explosion')[0].remove()
-  }, 1300);
+    gif.remove()
+  }, 1300)
+}
+
+function deleteExplosions() {
+  [...document.querySelectorAll('.explosion')].forEach(element => element.remove())
 }
