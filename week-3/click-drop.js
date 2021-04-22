@@ -56,31 +56,7 @@ document.addEventListener('mousemove', (e) => {
     if (e.offsetY > document.documentElement.offsetHeight * 0.85) {
       if (e.target.classList.contains('fire')) selected.classList.add('fire')
     }
-    let section = false
-    for (const node of e.path) {
-      if (node.nodeName === 'SECTION') {
-        section = true
-        const ol = node.querySelector('ol')
-
-        let placed = false
-        for (const li of ol.children) {
-          rect = li.getBoundingClientRect()
-          itemHeight = rect.top + li.offsetHeight / 2
-          if (e.clientY < itemHeight) {
-            ol.insertBefore(ghost, li)
-            placed = true
-            break
-          }
-        }
-
-        if (!placed) ol.appendChild(ghost)
-      }
-    }
-    if (!section) {
-      ghost.remove()
-    }
-  }
-  else {
+    placeGhost(e)
   }
 }) 
 
@@ -125,6 +101,8 @@ for (const list of lists) {
       for (node of e.path) {
         if (node.nodeName === 'LI') {
           selected = node
+
+          placeGhost(e)
 
           document.querySelector('body').appendChild(selected)
 
@@ -264,4 +242,32 @@ function createGhost() {
   li.appendChild(p)
   li.classList.add('ghost')
   return li
+}
+
+
+// Place Ghost
+function placeGhost(e) {
+  let section = false
+  for (const node of e.path) {
+    if (node.nodeName === 'SECTION') {
+      section = true
+      const ol = node.querySelector('ol')
+
+      let placed = false
+      for (const li of ol.children) {
+        rect = li.getBoundingClientRect()
+        itemHeight = rect.top + li.offsetHeight / 2
+        if (e.clientY < itemHeight) {
+          ol.insertBefore(ghost, li)
+          placed = true
+          break
+        }
+      }
+
+      if (!placed) ol.appendChild(ghost)
+    }
+  }
+  if (!section) {
+    ghost.remove()
+  }
 }
