@@ -39,4 +39,9 @@ We hebben Marijn ook een aantal persoonlijke vragen gesteld om erachter te komen
 
 Hij bestuurt zijn computer met 3 beeldschermen voornamelijk doormiddel van een trackpad. Dit trackpad gebruikt hij met 1 hand (voornamelijk zijn duim) dit is makkelijker voor hem dan gebruik maken van een keyboard omdat het gebruik van een trackpad minder fijne motoriek vereist. Het valt op dat zijn hele lichaam veel beweegt tijdens het gebruik van zijn computer. Toetsen die ver weg zitten van het trackpad of ver uit elkaar zitten zijn lastig voor Marijn om snel te bereiken; hij bereikt ze echter wel altijd!
 
+### Conclusie
+
+
 ## Week 2: Eerste Concept
+### Voorbereide Test
+
