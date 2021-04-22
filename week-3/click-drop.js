@@ -218,7 +218,7 @@ function displayDeleteButton() {
 
 
 // Delete currently selected card
-function deleteCard() {
+function deleteCard(e) {
   if (selected) {
     const title = selected.querySelector('p').textContent
 
@@ -227,6 +227,8 @@ function deleteCard() {
 
     selected.remove()
     selected = null
+
+    playExplosion(e)
 
     replaceButtonText()
     fireMode()
@@ -270,4 +272,20 @@ function placeGhost(e) {
   if (!section) {
     ghost.remove()
   }
+}
+
+
+// Create explosion gif element
+function playExplosion(e) {
+  const gif = document.createElement('IMG')
+  gif.src = 'explosion.gif'
+  gif.classList.add('explosion')
+  document.documentElement.appendChild(gif)
+
+  gif.style.left = e.pageX + 'px'
+  gif.style.top = e.pageY + 'px'
+
+  setTimeout(() => { 
+    gif.remove()
+  }, 2000);
 }

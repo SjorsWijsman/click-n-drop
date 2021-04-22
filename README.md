@@ -40,21 +40,42 @@ We hebben Marijn ook een aantal persoonlijke vragen gesteld om erachter te komen
 Hij bestuurt zijn computer met 3 beeldschermen voornamelijk doormiddel van een trackpad. Dit trackpad gebruikt hij met 1 hand (voornamelijk zijn duim) dit is makkelijker voor hem dan gebruik maken van een keyboard omdat het gebruik van een trackpad minder fijne motoriek vereist. Het valt op dat zijn hele lichaam veel beweegt tijdens het gebruik van zijn computer. Toetsen die ver weg zitten van het trackpad of ver uit elkaar zitten zijn lastig voor Marijn om snel te bereiken; hij bereikt ze echter wel altijd!
 
 ### Conclusie
-
+De test met click & drop werkte veruit het beste voor Marijn. Hieruit kan een conclusie getrokken worden dat Marijn vooral zijn trackpad wilt gebruiken om een app te besturen. Ik ga me dus richten op het verder uitwerken van dit concept met een grote focus op het zo makkelijk mogelijk maken van het besturen met een trackpad.
 
 ### Doel voor volgende week
+- [x] Herordenen van kaartjes
+- [x] Toevoegen van kaartjes
+- [x] Marijns interesse in metal implementeren
+- [x] Nonsense toevoegen
 
 
 ## Week 2: Eerste Concept
 ### Voorbereide Test
+Deze week heb ik het Click & Drop concept verder uitgewerkt en Marijns interesse in "takkeherrie" terug laten komen. Door alle kaartjes titels van Metal nummers te geven heeft Marijn ook meteen een doel in het gebruik van de app; het zetten van alle kaartjes op de goede plek. Wanneer alle kaartjes op de goede plek staan wordt de gebruiker beloont met een speciale "Fire Mode". Het resultaat hiervan is hier te vinden:
+- [Click 'n Drop](https://sjorswijsman.github.io/human-centered-design-2021/week-2/).
+
+### Verwachtingen
+
+
+### Resultaten
+
+
+### Conclusie
+
 
 ### Doel voor volgende week
+Must Have:
 - [x] Betere selected state
 - [x] 'Ghost' waar het kaartje komt te staan
 - [x] Kaartjes laten branden in het vuur
+- [ ] Betere plek voor de "Fire Mode" counter
+
+Could Have:
 - [ ] Interactie met Keyboard
 - [ ] Nieuwe songs niet in de juiste kolom neerzetten
-- [ ] Fix Fire.gif tiling issue
+- [ ] Delete animatie
+- [x] Fix Fire.gif tiling issue
+- [ ] Lasers?
 
 
 ## Week 3: Verbetering Concept
