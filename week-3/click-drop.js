@@ -287,5 +287,5 @@ function playExplosion(e) {
 
   setTimeout(() => { 
     gif.remove()
-  }, 2000);
+  }, 1200);
 }

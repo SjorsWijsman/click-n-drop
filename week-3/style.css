@@ -195,4 +195,5 @@ img.explosion {
   position: fixed;
   transform: translate(-50%, -70%);
   pointer-events: none;
+  z-index: 100;
 }
