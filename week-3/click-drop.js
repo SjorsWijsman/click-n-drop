@@ -130,20 +130,20 @@ function fireMode() {
 // Count correct songs
 fireCounter()
 function fireCounter() {
-  let count = 0;
-  let total = 0;
-  [...document.querySelectorAll('section')].forEach(list => {
-    const artist = list.querySelector('h2').textContent
-    const items = [...list.querySelector('ol').querySelectorAll('li')]
-    items.forEach(item => {
-      total += 1
-      if ({...songs, ...newSongs}[item.querySelector('p').textContent].artist === artist) {
-        count += 1
-      }
-    })
-  })
-  if (total < 4) total = 4
-  document.querySelector('footer').textContent = `Fire Mode: ${count}/${total}`
+  // let count = 0;
+  // let total = 0;
+  // [...document.querySelectorAll('section')].forEach(list => {
+  //   const artist = list.querySelector('h2').textContent
+  //   const items = [...list.querySelector('ol').querySelectorAll('li')]
+  //   items.forEach(item => {
+  //     total += 1
+  //     if ({...songs, ...newSongs}[item.querySelector('p').textContent].artist === artist) {
+  //       count += 1
+  //     }
+  //   })
+  // })
+  // if (total < 4) total = 4
+  // document.querySelector('footer').textContent = `Fire Mode: ${count}/${total}`
 }
 
 
@@ -280,16 +280,13 @@ function playExplosion(e) {
   deleteExplosions()
 
   const gif = document.createElement('IMG')
-  gif.src = 'explosion.gif'
   gif.classList.add('explosion')
   document.body.appendChild(gif)
 
   gif.style.left = e.pageX + 'px'
   gif.style.top = e.pageY + 'px'
 
-  setTimeout(() => { 
-    gif.remove()
-  }, 1300)
+  gif.src = 'explosion.gif'.replace(/\?.*$/,"")+"?x="+Math.random()
 }
 
 function deleteExplosions() {

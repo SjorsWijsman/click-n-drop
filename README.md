@@ -73,7 +73,7 @@ Must Have:
 Could Have:
 - [ ] Interactie met Keyboard
 - [ ] Nieuwe songs niet in de juiste kolom neerzetten
-- [ ] Delete animatie
+- [x] Delete animatie
 - [x] Fix Fire.gif tiling issue
 - [ ] Lasers?
 
