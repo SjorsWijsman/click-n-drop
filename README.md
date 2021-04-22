@@ -42,6 +42,19 @@ Hij bestuurt zijn computer met 3 beeldschermen voornamelijk doormiddel van een t
 ### Conclusie
 
 
+### Doel voor volgende week
+
+
 ## Week 2: Eerste Concept
 ### Voorbereide Test
 
+### Doel voor volgende week
+- [ ] Betere selected state
+- [x] 'Ghost' waar het kaartje komt te staan
+- [x] Kaartjes laten branden in het vuur
+- [ ] Interactie met Keyboard
+- [ ] Nieuwe songs niet in de juiste kolom neerzetten
+- [ ] Fix Fire.gif tiling issue
+
+
+## Week 3: Verbetering Concept

@@ -42,7 +42,9 @@ let newSongs = {
   },
 }
 
-let selected;
+let selected
+
+let ghost = createGhost()
 
 
 // Add move event to move selected item with mouse
@@ -50,9 +52,35 @@ document.addEventListener('mousemove', (e) => {
   if (selected) {
     selected.style.left = e.pageX + 'px'
     selected.style.top = e.pageY + 'px'
+    // Set selected list item on fire if fire mode is on
     if (e.offsetY > document.documentElement.offsetHeight * 0.85) {
       if (e.target.classList.contains('fire')) selected.classList.add('fire')
     }
+    let section = false
+    for (const node of e.path) {
+      if (node.nodeName === 'SECTION') {
+        section = true
+        const ol = node.querySelector('ol')
+
+        let placed = false
+        for (const li of ol.children) {
+          rect = li.getBoundingClientRect()
+          itemHeight = rect.top + li.offsetHeight / 2
+          if (e.clientY < itemHeight) {
+            ol.insertBefore(ghost, li)
+            placed = true
+            break
+          }
+        }
+
+        if (!placed) ol.appendChild(ghost)
+      }
+    }
+    if (!section) {
+      ghost.remove()
+    }
+  }
+  else {
   }
 }) 
 
@@ -61,6 +89,7 @@ document.addEventListener('mousemove', (e) => {
 for (const list of lists) {
   list.addEventListener('click', (e) => {
     if (selected) {
+      // Check if section is anywhere in target path (to include children)
       for (const node of e.path) {
         if (node.nodeName === 'SECTION') {
           const ol = node.querySelector('ol')
@@ -69,7 +98,7 @@ for (const list of lists) {
           let placed = false
           for (const li of ol.children) {
             rect = li.getBoundingClientRect()
-            itemHeight = rect.top + li.offsetHeight
+            itemHeight = rect.top + li.offsetHeight / 2
             if (e.clientY < itemHeight) {
               ol.insertBefore(selected, li)
               placed = true
@@ -84,6 +113,8 @@ for (const list of lists) {
           selected.classList.remove('fire')
           selected.style.left = ''
           selected.style.top = ''
+
+          ghost.remove()
           
           fireMode()
 
@@ -118,6 +149,7 @@ function fireMode() {
 }
 
 
+// Count correct songs
 fireCounter()
 function fireCounter() {
   let count = 0;
@@ -207,7 +239,7 @@ function displayDeleteButton() {
 }
 
 
-/// Delete currently selected card
+// Delete currently selected card
 function deleteCard() {
   if (selected) {
     const title = selected.querySelector('p').textContent
@@ -224,3 +256,12 @@ function deleteCard() {
 }
 
 
+// Creates ghost li
+function createGhost() {
+  const li = document.createElement('DIV')
+  const p = document.createElement('P')
+  p.innerText = 'Drop Here'
+  li.appendChild(p)
+  li.classList.add('ghost')
+  return li
+}

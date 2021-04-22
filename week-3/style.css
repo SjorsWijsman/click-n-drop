@@ -115,6 +115,9 @@ li {
   list-style-type: none;
   border-left: 0.4rem solid black;
   overflow: hidden;
+  position: relative;
+  transform: none;
+  pointer-events: all;
   min-width: 15rem;
 }
 
@@ -138,7 +141,7 @@ li input {
   height: 14px;
 }
 
-li > p {
+li > p, div > p {
   font-size: 1rem;
   padding: .5em 1em;
   z-index: 10;
@@ -149,14 +152,19 @@ li.selected {
   transform: translate(-50%, -50%);
   pointer-events: none;
   z-index: 100;
-  border-left: 0.4rem solid hsla(0, 63%, 43%, 0.9);
+  border-left: 0.4rem solid hsla(49, 71%, 53%, 0.9);
 }
 
-li {
-  position: relative;
-  transform: none;
-  pointer-events: all;
-  z-index: 1;
+div.ghost {
+  padding: 0.8rem 0.4rem;
+  pointer-events: none;
+  background-color: transparent;
+  border-left: 0.4rem solid transparent;
+  color: white;
+  opacity: 0.7;
+  outline-width: 0.15rem;
+  outline-style: dashed;
+  min-width: 15rem;
 }
 
 #delete-button {
