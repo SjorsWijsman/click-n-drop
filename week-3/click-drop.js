@@ -286,6 +286,6 @@ function playExplosion(e) {
   gif.style.top = e.pageY + 'px'
 
   setTimeout(() => { 
-    gif.remove()
-  }, 1200);
+    document.querySelectorAll('.explosion')[0].remove()
+  }, 1300);
 }
