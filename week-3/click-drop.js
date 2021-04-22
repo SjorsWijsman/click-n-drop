@@ -286,9 +286,12 @@ function playExplosion(e) {
   gif.style.left = e.pageX + 'px'
   gif.style.top = e.pageY + 'px'
 
+  // This is stupid but it forces the gif to reload
   gif.src = 'explosion.gif'.replace(/\?.*$/,"")+"?x="+Math.random()
 }
 
+
+// Delete all .explosion class elements
 function deleteExplosions() {
   [...document.querySelectorAll('.explosion')].forEach(element => element.remove())
 }

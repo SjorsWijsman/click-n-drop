@@ -55,27 +55,53 @@ Deze week heb ik het Click & Drop concept verder uitgewerkt en Marijns interesse
 - [Click 'n Drop](https://sjorswijsman.github.io/human-centered-design-2021/week-2/).
 
 ### Verwachtingen
-
+Mijn verwachting is dat het nog steeds fijn te gebruiken is voor Marijn omdat ik qua interactie niet bijzonder veel heb toegevoegd. Ik was vooral benieuwd naar hoe snel hij de app door zou hebben zonder instructies en wat hij ermee zal proberen te doen. (Bijvoorbeeld gebruik van keyboard)
 
 ### Resultaten
-
+Helaas was Marijn de afspraak vergeten en hebben we dus getest met Vasilis. Vasilis vertelde dat hij meteen begon met het uitproberen van het rondbewegen met het keyboard. Daarnaast vond hij dat de selected state nog niet duidelijk genoeg was. Een aantal songs kwamen toevallig meteen in de goede kolom wat het een stuk makkelijker maakte voor Vasilis om de kaarten op de goede plek te krijgen. Hij miste een indicatie waar de kaart komt te staan wanneer hij klikt. Daarnaast viel het me op dat hij probeerde om het kaartje in de fik te zetten.
 
 ### Conclusie
-
+Er zijn een aantal heel duidelijke resultaten uitgekomen die ik ook al een beetje zag aankomen, zoals 'feedforward' waar de kaart komt te staan. Over het algemeen ben ik wel tevreden met het product, er mist alleen nog een extra laag om het wat specialer te maken; het is nog een beetje te braaf. De to-do's die ik uit deze resultaten gehaald heb zijn hieronder te zien:
 
 ### Doel voor volgende week
 Must Have:
 - [x] Betere selected state
 - [x] 'Ghost' waar het kaartje komt te staan
 - [x] Kaartjes laten branden in het vuur
-- [ ] Betere plek voor de "Fire Mode" counter
+- [x] Betere plek voor de "Fire Mode" counter (verwijderd lol)
 
 Could Have:
 - [ ] Interactie met Keyboard
 - [ ] Nieuwe songs niet in de juiste kolom neerzetten
 - [x] Delete animatie
 - [x] Fix Fire.gif tiling issue
-- [ ] Lasers?
+- [ ] Lasers? - Destroy mode
 
 
 ## Week 3: Verbetering Concept
+### Voorbereide test
+Na vorige week ben ik verder gegaan met het verder uitwerken van het concept week. Ik heb de selected state verbeterd, 'ghosts' toegevoegd waar het kaartje komt te staan als de gebruiker nog eens klikt en de kaartjes gaan nu ook in de fik wanneer de gebruiker het kaartje in het vuur houdt. Daarnaast heb ik een kleine explosie toegevoegd wanneer kaartjes verwijderd worden. Ik hoop met deze kleine toevoegingen het concept leuker en duidelijker is om te gebruiken. Het testconcept is [hier te vinden](https://sjorswijsman.github.io/human-centered-design-2021/week-3/)
+
+### Verwachtingen
+Doordat we vorige week niet hebben kunnen testen met Marijn ben ik vooral benieuwd naar wat Marijn er zelf van vindt. Qua gemak heb ik deze week weinig veranderd omdat ik benieuwd ben naar hoe Marijn het concept nu gebruikt. Aan de hand daarvan wil ik nog aanpassingen maken voor het eindproduct.
+
+### Resultaten
+Hij zei het zelf niet maar ik merkte dat de Delete knop soms erg ver zit van het kaartje dat hij selecteert. Daarnaast gaat er soms wat fout bij het verplaatsen van de kaartjes onderling (mogelijk te fixen met een soort delay?). Daarnaast kent hij de nummers van Iron Maiden niet zo goed om de nummers op de goede plek te krijgen. Hij noemde zelf ook dat wanneer hij een kaart ver weg van de sections probeert te plaatsen hij verwacht dat de kaart terug gaat naar z'n startpositie.
+
+### Conclusie
+Ik heb weer wat extra dingen om uit te werken voor het eindconcept. Hij noemde dat "het werkt zoals een drag & drop hoor te werken". Mogelijk wil ik dus nog een totaal andere (optionele) manier uitwerken om de kaartjes te verplaatsen.
+
+Beweging van boven naar benden lijkt beter te gaan dan van links naar rechts - misschien dat ik er dus voor kan zorgen dat de delete knop er altijd onder staat.
+
+### Doel voor volgende week
+Must Have:
+- [ ] Interactie met Keyboard
+- [ ] Lasers? - Destroy mode
+- [ ] Terugzetten wanneer er ver buiten sections geklikt wordt
+- [ ] Iron Maiden vervangen
+- [ ] Makkelijker verwijderen van kaartjes (dichterbij)
+
+Could Have:
+- [ ] Alternatieve interactiemanier
+- [ ] Nieuwe songs niet in de juiste kolom neerzetten
+- [ ] Meerdere kaartjes oppakken
