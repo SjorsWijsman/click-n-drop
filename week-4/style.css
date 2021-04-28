@@ -26,6 +26,7 @@ html.lasers {
   animation-name: lasers;
   animation-duration: 4s;
   animation-direction: alternate;
+  background-size: unset;
   background-image: url(https://media4.giphy.com/media/pyvDmuNTHFxF5wuNYP/source.gif);
 }
 
