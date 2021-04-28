@@ -89,6 +89,7 @@ ol {
   margin-top: 1rem;
   padding-bottom: 0.8rem;
   min-width: 15rem;
+  padding-bottom: 6rem;
 }
 
 section > button {
@@ -137,11 +138,6 @@ li.selected.fire::before {
   z-index: 5;
 }
 
-li input {
-  width: 1.5em;
-  height: 14px;
-}
-
 li > p, div > p {
   font-size: 1rem;
   padding: .5em 1em;
@@ -168,6 +164,7 @@ div.ghost {
   outline-width: 0.15rem;
   outline-style: dashed;
   min-width: 15rem;
+  margin-bottom: -4.75rem;
 }
 
 .delete-button {

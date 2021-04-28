@@ -208,7 +208,6 @@ function getRandomSong() {
 // Display delete button when something is selected
 document.addEventListener('click', () => displayDeleteButton())
 function displayDeleteButton() {
-  console.log('hallo?')
   const deleteButton = document.querySelectorAll('.delete-button')
   const addButton = document.querySelectorAll('.add-button')
   if (selected) {
