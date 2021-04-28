@@ -95,7 +95,6 @@ Beweging van boven naar benden lijkt beter te gaan dan van links naar rechts - m
 
 ### Doel voor volgende week
 Must Have:
-- [ ] Interactie met Keyboard
 - [ ] Lasers? - Destroy mode
 - [ ] Terugzetten wanneer er ver buiten sections geklikt wordt
 - [ ] Iron Maiden vervangen
@@ -105,3 +104,7 @@ Could Have:
 - [ ] Alternatieve interactiemanier
 - [ ] Nieuwe songs niet in de juiste kolom neerzetten
 - [ ] Meerdere kaartjes oppakken
+- [ ] Animatie voor het verplaatsen van kaartjes
+
+Won't Have:
+- [ ] Interactie met Keyboard
