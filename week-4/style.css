@@ -17,7 +17,27 @@
 html {
   height: 100%;
   font-size: calc(65% + 0.8vmin);
-  background-image: url(https://media.macphun.com/img/uploads/customer/blog/1541154551/15411555025bdc2aae54d493.92923804.jpg?q=85&w=1680)
+  background-image: url(https://media.macphun.com/img/uploads/customer/blog/1541154551/15411555025bdc2aae54d493.92923804.jpg?q=85&w=1680);
+  background-size: cover;
+  background-position: center;
+}
+
+html.lasers {
+  animation-name: lasers;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  background-image: url(https://media4.giphy.com/media/pyvDmuNTHFxF5wuNYP/source.gif);
+}
+
+@keyframes lasers {
+  0% {
+    background-position-y: 0%;
+    background-image: url(https://media.macphun.com/img/uploads/customer/blog/1541154551/15411555025bdc2aae54d493.92923804.jpg?q=85&w=1680);
+  }
+  100% {
+    background-position-y: -500vh;
+    background-image: url(https://media4.giphy.com/media/pyvDmuNTHFxF5wuNYP/source.gif);
+  }
 }
 
 html.fire::before {
@@ -50,7 +70,7 @@ header {
   margin: 2rem auto;
 }
 
-h1 {
+h1, h1 * {
   color: #FFF;
   font-size: 2rem;
   margin: 0;

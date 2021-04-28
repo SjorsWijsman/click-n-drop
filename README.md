@@ -1,6 +1,8 @@
 # Human Centered Design @cmda-minor-web 2021
 Test Links: https://sjorswijsman.github.io/human-centered-design-2021/
 
+---
+
 ## Week 1: User Tests
 ### Voorbereide Tests
 Het doel van deze week was een goede nulmeting maken en Marijn leren kennen. Om een goed idee te krijgen van de problemen die Marijn ondervindt bij het gebruiken van een typisch Drag & Drop systeem hebben we als groep een test voorbereid. Vervolgens heb ik op basis van deze test (Keyboard Only) nog 3 andere tests uitgewerkt. Deze tests zijn hier te vinden:
@@ -48,6 +50,7 @@ De test met click & drop werkte veruit het beste voor Marijn. Hieruit kan een co
 - [x] Marijns interesse in metal implementeren
 - [x] Nonsense toevoegen
 
+---
 
 ## Week 2: Eerste Concept
 ### Voorbereide Test
@@ -77,6 +80,7 @@ Could Have:
 - [x] Fix Fire.gif tiling issue
 - [ ] Lasers? - Destroy mode
 
+---
 
 ## Week 3: Verbetering Concept
 ### Voorbereide test
@@ -98,7 +102,7 @@ Must Have:
 - [ ] Lasers? - Destroy mode
 - [ ] Terugzetten wanneer er ver buiten sections geklikt wordt
 - [ ] Iron Maiden vervangen
-- [ ] Makkelijker verwijderen van kaartjes (dichterbij)
+- [x] Makkelijker verwijderen van kaartjes (dichterbij)
 
 Could Have:
 - [ ] Alternatieve interactiemanier
@@ -108,3 +112,17 @@ Could Have:
 
 Won't Have:
 - [ ] Interactie met Keyboard
+
+---
+
+## Week 4: Eindproduct & Conclusie
+### Eindproduct
+- Wat is het eindproduct geworden?
+- Wat is er uiteindelijk net in gekomen?
+- Welke keuzes heb ik gemaakt?
+- Waar liep ik tegenaan?
+
+### Conclusie
+- Wat heb ik geleerd?
+- Wat kan er volgende keer beter?
+- Waar ben ik trots op?

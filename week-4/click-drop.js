@@ -304,3 +304,14 @@ function playExplosion(e) {
 function deleteExplosions() {
   [...document.querySelectorAll('.explosion')].forEach(element => element.remove())
 }
+
+
+function laserMode(e) {
+  const laserText = document.querySelector('#laser-text')
+  if (laserText.textContent === "Drop") {
+    laserText.textContent = "LASERS"
+  } else {
+    laserText.textContent = "Drop"
+  }
+  document.querySelector('html').classList.toggle('lasers')
+}
