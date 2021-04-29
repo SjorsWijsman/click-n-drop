@@ -125,30 +125,30 @@ Won't Have:
 ## Week 4: Eindproduct & Conclusie
 ### Eindproduct
 ![Screenshot Eindproduct](https://i.ibb.co/KyYJVKc/Screenshot-2021-04-29-at-10-13-19.png)
-- Wat is het eindproduct geworden?
+- **Wat is het eindproduct geworden?**
   - [Click 'n Drop](https://sjorswijsman.github.io/human-centered-design-2021/week-4/).
   - Het eindproduct is een 'sticky-keys' uitwerking van een klassieke Drag & Drop; de gebruiker hoeft alleen te klikken op een kaart om hem vast te pakken. Hierdoor hoeft de muis niet ingedrukt gehouden te worden.
   - Het heeft ook knoppen om gemakkelijk (en altijd dicht bij de muis) kaarten toe te voegen en te verwijderen.
   - Het valt niet te slopen. (zelfs niet door Marijn!!!)
   - Het heeft een hele hoop nonsense (brandende kaarten, lasers en vuurshows).
 
-- Wat is er uiteindelijk niet in gekomen?
+- **Wat is er uiteindelijk niet in gekomen?**
   - Terugzetten van kaartjes wanneer er ver buiten sections geklikt wordt - Dit is echter wel iets wat ik meteen zou toevoegen met wat extra tijd.
   - Meerdere kaartjes oppakken - Dit heb ik er bewust niet ingezet omdat hierdoor het gebruik van 'ghosts' niet mogelijk gemaakt wordt.
   - Animaties voor het verplaatsen van kaartjes - Dit is een handige tool voor kaartjes die over een grote afstand verschoven worden, de kaartjes zitten echter altijd vast aan de muis wanneer ze verplaatst worden. Hierdoor staat het kaartje altijd dichtbij zijn eindlocatie.
   - Interactie met keyboard - Dit heb niet geimplementeerd omdat ik merkte dat het eigenlijk al enorm goed werkte voor Marijn met alleen zijn trackpad, ik merkte geen behoefte voor hem om het ook met zijn keyboard te bedienen.
 
-- Waar liep ik tegenaan?
+- **Waar liep ik tegenaan?**
   - Ik had onderschat hoeveel coderen dit vak zou zijn. Doordat het best complexe handelingen zijn (zoals het herordenen van de kaartjes binnen groepen) ontstaan er enorm veel edge cases die allemaal afgehandeld moeten worden.
   - Ik vond het soms lastig om te testen met Marijn omdat ik hem niet altijd goed kon verstaan; hierdoor liep ik een beetje interactie mis, ik had graag in het echt willen testen zodat ik hem beter zou kunnen verstaan.
 
 ### Conclusie
-- Wat heb ik geleerd?
+- **Wat heb ik geleerd?**
   - Ik heb geleerd wat de Exclusive Design Principles zijn [hier beschreven]() en aan de hand daarvan een eindproduct gemaakt voor 1 speciaal persoon.
   - Ik heb geleerd hoe je (remote) moet testen. Een aantal Do's zijn bijvoorbeeld: Het testpersoon niet helpen (zeker als het gaat om een exlusive design) en stel een doel en verwachting op per test (dit helpt enorm, vooral wanneer de tests kort duren). Een goed voorbeeld van een Don't, waar ik nog wel eens moeite mee heb, is het gebruik maken van sturende opdrachten/vragen aan het testpersoon.
 
-- Wat kan er volgende keer beter?
+- **Wat kan er volgende keer beter?**
   - Ik heb m'n best gedaan om een Drag & Drop zo makkelijk mogelijk te maken voor Marijn, maar ik heb hierbij - na de eerste week - niet heel veel verschillende prototypes getest. Mogelijk was ik tot een nog cooler/innovatiever eindproduct gekomen als ik nog een week extra had genomen om verschillende prototypes te testen.
 
-- Waar ben ik trots op?
+- **Waar ben ik trots op?**
   - Ik ben trots op het feit dat ik een goed werkend exclusive design heb kunnen maken dat beter werkt dat de gemiddelde Drag & Drop. Dit heeft aardig wat moeite gekost; omdat de code enorm veel edge cases heeft (die Marijn ook absoluut opzoekt). Hierdoor was het enorm belanrgijk om het niveau van kwaliteit van mijn code hoog te houden.
