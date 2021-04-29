@@ -144,7 +144,7 @@ Won't Have:
 
 ### Conclusie
 - **Wat heb ik geleerd?**
-  - Ik heb geleerd wat de Exclusive Design Principles zijn [hier beschreven]() en aan de hand daarvan een eindproduct gemaakt voor 1 speciaal persoon.
+  - Ik heb geleerd wat de Exclusive Design Principles zijn ([hier beschreven]()) en aan de hand daarvan een eindproduct gemaakt voor 1 speciaal persoon.
   - Ik heb geleerd hoe je (remote) moet testen. Een aantal Do's zijn bijvoorbeeld: Het testpersoon niet helpen (zeker als het gaat om een exlusive design) en stel een doel en verwachting op per test (dit helpt enorm, vooral wanneer de tests kort duren). Een goed voorbeeld van een Don't, waar ik nog wel eens moeite mee heb, is het gebruik maken van sturende opdrachten/vragen aan het testpersoon.
 
 - **Wat kan er volgende keer beter?**
