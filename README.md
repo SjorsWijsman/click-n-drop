@@ -1,5 +1,5 @@
 # Human Centered Design @cmda-minor-web 2021
-Test Links: https://sjorswijsman.github.io/human-centered-design-2021/
+Test Links: https://sjorswijsman.github.io/click-n-drop/
 
 ---
 
@@ -7,10 +7,10 @@ Test Links: https://sjorswijsman.github.io/human-centered-design-2021/
 ### Voorbereide Tests
 Het doel van deze week was een goede nulmeting maken en Marijn leren kennen. Om een goed idee te krijgen van de problemen die Marijn ondervindt bij het gebruiken van een typisch Drag & Drop systeem hebben we als groep een test voorbereid. Vervolgens heb ik op basis van deze test (Keyboard Only) nog 3 andere tests uitgewerkt. Deze tests zijn hier te vinden:
 
-1. **[Drag & Drop](https://sjorswijsman.github.io/human-centered-design-2021/week-1/drag-and-drop/)**
-2. **[Click & Drop](https://sjorswijsman.github.io/human-centered-design-2021/week-1/click-and-drop/)**
-3. **[Keyboard Only](https://sjorswijsman.github.io/human-centered-design-2021/week-1/keyboard-only/)**
-4. **[Buttons](https://sjorswijsman.github.io/human-centered-design-2021/week-1/button-move/)**
+1. **[Drag & Drop](https://sjorswijsman.github.io/click-n-drop/week-1/drag-and-drop/)**
+2. **[Click & Drop](https://sjorswijsman.github.io/click-n-drop/week-1/click-and-drop/)**
+3. **[Keyboard Only](https://sjorswijsman.github.io/click-n-drop/week-1/keyboard-only/)**
+4. **[Buttons](https://sjorswijsman.github.io/click-n-drop/week-1/button-move/)**
 
 ![Screenshot Click & Drop](https://i.ibb.co/whBPx8c/Screenshot-2021-04-29-at-10-10-22.png)
 
@@ -59,7 +59,7 @@ De test met click & drop werkte veruit het beste voor Marijn. Hieruit kan een co
 
 ### Voorbereide Test
 Deze week heb ik het Click & Drop concept verder uitgewerkt en Marijns interesse in "takkeherrie" terug laten komen. Door alle kaartjes titels van Metal nummers te geven heeft Marijn ook meteen een doel in het gebruik van de app; het zetten van alle kaartjes op de goede plek. Wanneer alle kaartjes op de goede plek staan wordt de gebruiker beloont met een speciale "Fire Mode". Het resultaat hiervan is hier te vinden:
-- [Click 'n Drop](https://sjorswijsman.github.io/human-centered-design-2021/week-2/).
+- [Click 'n Drop](https://sjorswijsman.github.io/click-n-drop/week-2/).
 
 ### Verwachtingen
 Mijn verwachting is dat het nog steeds fijn te gebruiken is voor Marijn omdat ik qua interactie niet bijzonder veel heb toegevoegd. Ik was vooral benieuwd naar hoe snel hij de app door zou hebben zonder instructies en wat hij ermee zal proberen te doen. (Bijvoorbeeld gebruik van keyboard)
@@ -91,7 +91,7 @@ Could Have:
 
 ### Voorbereide test
 Na vorige week ben ik verder gegaan met het verder uitwerken van het concept week. Ik heb de selected state verbeterd, 'ghosts' toegevoegd waar het kaartje komt te staan als de gebruiker nog eens klikt en de kaartjes gaan nu ook in de fik wanneer de gebruiker het kaartje in het vuur houdt. Daarnaast heb ik een kleine explosie toegevoegd wanneer kaartjes verwijderd worden. Ik hoop met deze kleine toevoegingen het concept leuker en duidelijker is om te gebruiken. Het testconcept is hier te vinden:
-- [Click 'n Drop](https://sjorswijsman.github.io/human-centered-design-2021/week-3/).
+- [Click 'n Drop](https://sjorswijsman.github.io/click-n-drop/week-3/).
 
 ### Verwachtingen
 Doordat we vorige week niet hebben kunnen testen met Marijn ben ik vooral benieuwd naar wat Marijn er zelf van vindt. Qua gemak heb ik deze week weinig veranderd omdat ik benieuwd ben naar hoe Marijn het concept nu gebruikt. Aan de hand daarvan wil ik nog aanpassingen maken voor het eindproduct.
@@ -126,7 +126,7 @@ Won't Have:
 ### Eindproduct
 ![Screenshot Eindproduct](https://i.ibb.co/KyYJVKc/Screenshot-2021-04-29-at-10-13-19.png)
 - **Wat is het eindproduct geworden?**
-  - [Click 'n Drop](https://sjorswijsman.github.io/human-centered-design-2021/week-4/).
+  - [Click 'n Drop](https://sjorswijsman.github.io/click-n-drop/week-4/).
   - Het eindproduct is een 'sticky-keys' uitwerking van een klassieke Drag & Drop; de gebruiker hoeft alleen te klikken op een kaart om hem vast te pakken. Hierdoor hoeft de muis niet ingedrukt gehouden te worden.
   - Het heeft ook knoppen om gemakkelijk (en altijd dicht bij de muis) kaarten toe te voegen en te verwijderen.
   - Het valt niet te slopen. (zelfs niet door Marijn!!!)
